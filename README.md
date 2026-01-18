@@ -35,7 +35,7 @@ Each algorithm is implemented as a **standalone C++ program** and follows a cons
 - Simple but computationally less efficient
 - Suitable for introductory understanding
 
-📂 Location: `Source Code/DDA_Line.cpp`
+📂 Location: [`Source Code/DDA_Line.cpp`](Source%20Code/DDA_Line.cpp)
 
 ---
 
@@ -46,7 +46,7 @@ Each algorithm is implemented as a **standalone C++ program** and follows a cons
 - No floating-point operations
 - Widely used in raster systems
 
-📂 Location: `Source Code/Bresenham_Line.cpp`
+📂 Location: [`Source Code/Bresenham_Line.cpp`](Source%20Code/Bresenham_Line.cpp)
 
 ---
 
@@ -57,7 +57,7 @@ Each algorithm is implemented as a **standalone C++ program** and follows a cons
 - Optimized decision logic
 - High performance
 
-📂 Location: `Source Code/Bresenham_Circle.cpp`
+📂 Location: [`Source Code/Bresenham_Circle.cpp`](Source%20Code/Bresenham_Circle.cpp)
 
 ---
 
@@ -67,7 +67,7 @@ Each algorithm is implemented as a **standalone C++ program** and follows a cons
 - Improved numerical stability
 - Accurate raster circle generation
 
-📂 Location: `Source Code/Midpoint_Circle.cpp`
+📂 Location: [`Source Code/Midpoint_Circle.cpp`](Source%20Code/Midpoint_Circle.cpp)
 
 ---
 
@@ -77,7 +77,7 @@ Each algorithm is implemented as a **standalone C++ program** and follows a cons
 - Divides ellipse into two regions
 - Handles major and minor axes efficiently
 
-📂 Location: `Source Code/Midpoint_Ellipse.cpp`
+📂 Location: [`Source Code/Midpoint_Ellipse.cpp`](Source%20Code/Midpoint_Ellipse.cpp)
 
 ---
 
@@ -88,7 +88,7 @@ Each algorithm is implemented as a **standalone C++ program** and follows a cons
 - Minimizes intersection calculations
 - Uses parametric equations
 
-📂 Location: `Source Code/Liang_Barsky.cpp`
+📂 Location: [`Source Code/Liang–Barsky.cpp`](Source%20Code/Liang%E2%80%93Barsky.cpp)
 
 ---
 
