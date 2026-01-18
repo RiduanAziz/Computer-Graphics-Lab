@@ -1,0 +1,122 @@
+============================================
+Computer Graphics Lab Requirements
+graphics.h Configuration (Code::Blocks)
+============================================
+
+1. Software Requirements
+   - Operating System: Windows 10 / 11
+   - IDE: Code::Blocks (with MinGW compiler included)
+   - Compiler: GCC (MinGW, 32-bit recommended)
+
+2. Configuration Files (Provided in config/ folder)
+   The following files must be available inside the config/ directory:
+
+   config/graphics.h
+   config/winbgim.h
+   config/libbgi.a
+
+3. File Placement Instructions
+   - Copy config/graphics.h to:
+     CodeBlocks/MinGW/include/
+
+   - Copy config/winbgim.h to:
+     CodeBlocks/MinGW/include/
+
+   - Copy config/libbgi.a to:
+     CodeBlocks/MinGW/lib/
+
+4. Linker Configuration (Code::Blocks)
+   Open Code::Blocks and configure the linker as follows:
+
+   Settings → Compiler → Linker Settings
+
+   - Add the library file:
+     libbgi.a
+
+   - Add the following linker options exactly:
+     -lbgi
+     -lgdi32
+     -lcomdlg32
+     -luuid
+     -loleaut32
+     -lole32
+
+5. Source File Requirements
+   - Graphics programs must be written in C++
+   - File extension must be .cpp
+   - graphics.h must be included using:
+     #include <graphics.h>
+
+6. Build and Execution
+   - Use "Build and Run" from Code::Blocks
+   - Successful execution should open a graphics window
+
+7. Notes
+   - graphics.h is not a pip-installable package
+   - Manual configuration using the provided config/ files is mandatory
+   - 64-bit MinGW may cause linking errors; 32-bit MinGW is recommended
+
+
+
+
+=====================================================
+Computer Graphics Lab Requirements
+graphics.h Configuration using TDM-GCC 32-bit
+=====================================================
+
+1. Software Requirements
+   - Operating System: Windows 10 / Windows 11
+   - Compiler: TDM-GCC 32-bit
+   - GCC Version: Compatible 32-bit (TDM-GCC)
+   - IDE (Optional): Code::Blocks or any GCC-supported editor
+   - https://jmeubank.github.io/tdm-gcc/
+
+2. Configuration Files (Provided in config/ folder)
+   The following files must be present inside the config/ directory:
+
+   config/graphics.h
+   config/winbgim.h
+   config/libbgi.a
+
+3. File Placement Instructions (TDM-GCC)
+   - Copy the following header files:
+     config/graphics.h
+     config/winbgim.h
+     To:
+     TDM-GCC/include/
+
+   - Copy the library file:
+     config/libbgi.a
+     To:
+     TDM-GCC/lib/
+
+4. Compiler and Linker Configuration
+   When compiling graphics programs using TDM-GCC, the following
+   libraries must be linked in the given order:
+
+   -lbgi
+   -lgdi32
+   -lcomdlg32
+   -luuid
+   -loleaut32
+   -lole32
+
+5. Source File Requirements
+   - Programs must be written in C++
+   - Source file extension must be .cpp
+   - The graphics library must be included using:
+     #include <graphics.h>
+
+6. Compilation Command (Manual Build)
+   Use the following command to compile a graphics program:
+
+   g++ main.cpp -o main -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32
+
+7. Execution
+   - Run the generated executable from Command Prompt or IDE
+   - A graphics window indicates successful configuration
+
+8. Notes and Constraints
+   - TDM-GCC must be 32-bit; 64-bit compilers are not supported
+   - graphics.h is not installable via package managers
+   - Manual configuration using config/ files is mandatory
