@@ -7,7 +7,7 @@
 ![Purpose](https://img.shields.io/badge/Purpose-Academic%20Lab-informational)
 
 A structured collection of **Computer Graphics laboratory programs** implemented in **C++** using the **graphics.h (WinBGIm)** library.  
-This repository follows standard **university Computer Graphics lab syllabi** and focuses on fundamental raster graphics algorithms.
+This repository follows standard **University level Computer Graphics Lab** and focuses on fundamental raster graphics algorithms.
 
 ---
 
